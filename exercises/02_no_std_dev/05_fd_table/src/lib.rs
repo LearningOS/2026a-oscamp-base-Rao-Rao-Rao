@@ -48,42 +48,51 @@ pub trait File: Send + Sync {
 
 /// File descriptor table
 pub struct FdTable {
-    // TODO: Design the internal structure
-    // Hint: use Vec<Option<Arc<dyn File>>>
-    //       the index is the fd number, None means the fd is closed or unallocated
+    inner: Vec<Option<Arc<dyn File>>>,
 }
 
 impl FdTable {
     /// Create an empty fd table
     pub fn new() -> Self {
-        // TODO
-        todo!()
+        Self { inner: Vec::new() }
     }
 
     /// Allocate a new fd, return the fd number.
-    ///
-    /// Prefers reusing the smallest closed fd number; if no free slot, appends to the end.
     pub fn alloc(&mut self, file: Arc<dyn File>) -> usize {
-        // TODO
-        todo!()
+        // 第一步：寻找最小的已关闭空闲槽位
+        for (i, slot) in self.inner.iter_mut().enumerate() {
+            if slot.is_none() {
+                *slot = Some(file);
+                return i;
+            }
+        }
+        // 第二步：没有空闲槽位，追加到表末尾
+        self.inner.push(Some(file));
+        self.inner.len() - 1
     }
 
-    /// Get the file object for an fd. Returns None if the fd doesn't exist or is closed.
+    /// Get the file object for an fd.
     pub fn get(&self, fd: usize) -> Option<Arc<dyn File>> {
-        // TODO
-        todo!()
+        // 边界检查
+        if fd >= self.inner.len() {
+            return None;
+        }
+        self.inner[fd].clone()
     }
 
-    /// Close an fd. Returns true on success, false if the fd doesn't exist or is already closed.
+    /// Close an fd. Returns true on success
     pub fn close(&mut self, fd: usize) -> bool {
-        // TODO
-        todo!()
+        // 边界检查 + 已关闭检查
+        if fd >= self.inner.len() || self.inner[fd].is_none() {
+            return false;
+        }
+        self.inner[fd] = None; // 置空，而不是删除，保持fd编号不变
+        true
     }
 
-    /// Return the number of currently allocated fds (excluding closed ones)
+    /// Return the number of currently allocated fds
     pub fn count(&self) -> usize {
-        // TODO
-        todo!()
+        self.inner.iter().filter(|x| x.is_some()).count()
     }
 }
 
