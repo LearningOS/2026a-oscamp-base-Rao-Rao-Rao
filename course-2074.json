@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "1b7a545f3347ce4e1bd6fc67954254a3e7cbc3d9",
-  "score": 43,
+  "commit": "24632764df0220c9184858864427ef27fffa85ed",
+  "score": 47,
   "totalScore": 100,
   "exercises": [
     {
@@ -79,9 +79,9 @@
     {
       "name": "atomic_ordering",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "spinlock",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38894445320",
+  "runId": "38894806189",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
