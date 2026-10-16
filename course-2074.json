@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "6829d09760060f5000802785b5f6d9ecab1b6fd7",
-  "score": 11,
+  "commit": "c57a22d88c8c7b0814e58c11d9557b977a2e1413",
+  "score": 15,
   "totalScore": 100,
   "exercises": [
     {
@@ -37,9 +37,9 @@
     {
       "name": "mem_primitives",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "bump_allocator",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38881508909",
+  "runId": "38882017121",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
