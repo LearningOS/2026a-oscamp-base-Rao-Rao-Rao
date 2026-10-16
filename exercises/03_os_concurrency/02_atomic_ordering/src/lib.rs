@@ -15,6 +15,7 @@
 
 use std::sync::atomic::{AtomicBool, AtomicU32, Ordering};
 
+
 /// Use Release-Acquire semantics to safely pass data between two threads.
 ///
 /// `produce` writes data first, then sets flag with Release;
@@ -38,12 +39,8 @@ impl FlagChannel {
     /// - What Ordering should be used for writing data?
     /// - What Ordering should be used for writing ready? (ensuring data writes are visible to consumer)
     pub fn produce(&self, value: u32) {
-        // TODO: Store data (choose appropriate Ordering)
-        // TODO: Set ready = true (choose appropriate Ordering so data writes complete before this)
-        while !self.ready.load(Ordering::Acquire) {
-            std::hint::spin_loop();
-        }
-        self.data.load(Ordering::Relaxed)
+        self.data.store(value, Ordering::Relaxed);
+        self.ready.store(true, Ordering::Release);
     }
 
     /// Consumer: spin-wait for ready flag, then read data.
@@ -52,10 +49,10 @@ impl FlagChannel {
     /// - What Ordering should be used for reading ready? (ensuring it sees data writes from produce)
     /// - What Ordering should be used for reading data?
     pub fn consume(&self) -> u32 {
-        // TODO: Spin-wait for ready to become true (choose appropriate Ordering)
-        // TODO: Read data (choose appropriate Ordering)
-        self.data.store(value, Ordering::Relaxed);
-        self.ready.store(true, Ordering::Release);
+        while !self.ready.load(Ordering::Acquire) {
+            std::hint::spin_loop();
+        }
+        self.data.load(Ordering::Relaxed)
     }
 
     /// Reset channel state
