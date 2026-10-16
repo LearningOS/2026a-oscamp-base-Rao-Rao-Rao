@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "a90725dd01595711cb46ede8ab0be83ec240e1fb",
-  "score": 82,
+  "commit": "23ed36cabe6e2c9e1d2e8b3cdacf8ccec3737c8c",
+  "score": 86,
   "totalScore": 100,
   "exercises": [
     {
@@ -142,9 +142,9 @@
     {
       "name": "select_timeout",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "pte_flags",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38898498531",
+  "runId": "38898628587",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
