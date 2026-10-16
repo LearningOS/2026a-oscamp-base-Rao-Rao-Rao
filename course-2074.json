@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "d655cee0850865136441f5cfb9efd7308384fbea",
-  "score": 60,
+  "commit": "3fb00778ba32ce73342a9f822e4e38d5d570fdc2",
+  "score": 66,
   "totalScore": 100,
   "exercises": [
     {
@@ -107,9 +107,9 @@
     {
       "name": "stack_coroutine",
       "max": 6,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 6,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "green_threads",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38896279480",
+  "runId": "38896681491",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
