@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "7a95c2f1375492c2ba9275767ba80f5f44f2d20d",
-  "score": 93,
+  "commit": "fe71f0cfe2c9a3f26304abb11ae944467d688adb",
+  "score": 97,
   "totalScore": 100,
   "exercises": [
     {
@@ -163,9 +163,9 @@
     {
       "name": "multi_level_pt",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "tlb_sim",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38899207711",
+  "runId": "38899519223",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
