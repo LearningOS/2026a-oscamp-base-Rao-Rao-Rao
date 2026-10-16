@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "bbdda8df33191c9925d7c38a6516148cf9300447",
-  "score": 51,
+  "commit": "9a317f743f1fd1db3432199cfd3c3326a32a9aba",
+  "score": 55,
   "totalScore": 100,
   "exercises": [
     {
@@ -93,9 +93,9 @@
     {
       "name": "spinlock_guard",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "rwlock",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38895156064",
+  "runId": "38895402725",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
