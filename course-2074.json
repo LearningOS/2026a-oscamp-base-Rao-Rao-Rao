@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "06e9628d13cdaf4b12b5daa01df75d43021a54ad",
-  "score": 76,
+  "commit": "50715879e47efab93249fb1effb0a28a160b571d",
+  "score": 79,
   "totalScore": 100,
   "exercises": [
     {
@@ -128,9 +128,9 @@
     {
       "name": "tokio_tasks",
       "max": 3,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 3,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "async_channel_ex",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38898238461",
+  "runId": "38898375958",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
