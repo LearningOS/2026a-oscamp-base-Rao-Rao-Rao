@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "923d559c224bafb3754d6eb58b93f929bd91a4d7",
-  "score": 34,
+  "commit": "a563f1291b3dfe2a19bd242e0286e8af3fa6ef01",
+  "score": 39,
   "totalScore": 100,
   "exercises": [
     {
@@ -65,9 +65,9 @@
     {
       "name": "fd_table",
       "max": 5,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 5,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "atomic_counter",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38893178262",
+  "runId": "38893494592",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
