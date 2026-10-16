@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "a67ad626b07a5cd163333f4ef7372661b63724a8",
-  "score": 7,
+  "commit": "6829d09760060f5000802785b5f6d9ecab1b6fd7",
+  "score": 11,
   "totalScore": 100,
   "exercises": [
     {
@@ -30,9 +30,9 @@
     {
       "name": "process_pipe",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "mem_primitives",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38881242712",
+  "runId": "38881508909",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
