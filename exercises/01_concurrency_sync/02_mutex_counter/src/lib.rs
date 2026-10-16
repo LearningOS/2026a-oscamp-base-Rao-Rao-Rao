@@ -37,7 +37,10 @@ pub fn concurrent_counter(n_threads: usize, count_per_thread: usize) -> usize {
         handle.join().unwrap();
     }
 
-    *counter.lock().unwrap()
+    // 关键修复：将值取出，放到局部变量里，再返回，解决生命周期问题！
+    let final_value = *counter.lock().unwrap();
+    final_value
+
 }
 
 /// Add elements to a shared vector concurrently using multiple threads.
