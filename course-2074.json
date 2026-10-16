@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "cd33069ebf5d0c4de024579a8a0160cf94566b4c",
-  "score": 20,
+  "commit": "83694a43b9123fe19bfc30df784c5921303bcb9f",
+  "score": 24,
   "totalScore": 100,
   "exercises": [
     {
@@ -16,9 +16,9 @@
     {
       "name": "mutex_counter",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "channel",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38882503988",
+  "runId": "38890451238",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
