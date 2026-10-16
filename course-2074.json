@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-Rao-Rao-Rao",
-  "commit": "3fb00778ba32ce73342a9f822e4e38d5d570fdc2",
-  "score": 66,
+  "commit": "c6313a7b2e39b644722be91260eb1e9c17dd36b1",
+  "score": 67,
   "totalScore": 100,
   "exercises": [
     {
@@ -100,9 +100,9 @@
     {
       "name": "rwlock",
       "max": 5,
-      "score": 5,
-      "status": "pass",
-      "exitCode": 0
+      "score": 0,
+      "status": "timeout",
+      "exitCode": 124
     },
     {
       "name": "stack_coroutine",
@@ -114,9 +114,9 @@
     {
       "name": "green_threads",
       "max": 6,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 6,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "basic_future",
@@ -176,7 +176,7 @@
     }
   ],
   "student": "Rao-Rao-Rao",
-  "runId": "38896681491",
+  "runId": "38897690261",
   "runAttempt": "1",
   "upload": {
     "status": "pending"
